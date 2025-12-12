@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer components{
+  .Navbar{
+        @apply w-full px-[4%] sm:px-[8%] fixed h-auto box-border z-[2] flex items-center justify-between py-2 gap-10;
+    }
+}

@@ -1,0 +1,39 @@
+body,
+html {
+  
+  overscroll-behavior: none;
+  position: relative;
+  font-size: 20px;
+}
+#root {
+  
+  background-color: white;
+  width: 100vw;
+  height: auto;
+  user-select: none;
+  position: relative;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none; /* Firefox */
+}
+input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #FFFFFF12 inset !important; /* your dark background color */
+  -webkit-text-fill-color: black !important;         /* text color to match */
+  transition: background-color 9999s ease-in-out 0s;
+}
+@media (max-width: 640px) {
+  body,
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width:641px)and (max-width: 1024px) {
+  body,
+  html {
+    font-size: 16px;
+  }
+}
