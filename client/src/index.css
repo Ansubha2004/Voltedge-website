@@ -55,10 +55,35 @@ input:-webkit-autofill {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-15px);
   }
 }
 
 .float {
   animation: float 3s ease-in-out infinite;
+}
+@keyframes pop {
+  
+  60% {
+    transform: scale(1.05);
+  }
+  0%,100% {
+    transform: scale(1);
+  }
+}
+
+.pop {
+  animation: pop 3s ease-out infinite;
+}
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.oxanium {
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
