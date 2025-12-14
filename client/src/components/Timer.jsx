@@ -33,7 +33,7 @@ function Timer({targetdate}) {
     }
 
     return (
-        <div className="translate-y-5 h-auto w-auto flex gap-5 my-3 items-center">
+        <div className=" h-auto w-auto flex gap-5 items-center">
             <Timebox label="DAYS" value={timeleft.days} />
             <Timebox label="HOURS" value={timeleft.hours}/>
             <Timebox label="MINUTES" value={timeleft.minutes}/>

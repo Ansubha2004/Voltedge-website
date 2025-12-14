@@ -9,7 +9,7 @@
         @apply font-[900] sm:font-[700] text-[1.6rem] sm:text-[2rem] bg-clip-text text-transparent;
     }
     .subheading{
-        @apply font-[700] -translate-y-4 text-[1.2rem];
+        @apply font-[700]  text-[1.2rem];
     }
     .paratext
     {
