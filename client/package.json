@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@react-three/fiber": "^9.4.2",
     "@tailwindcss/vite": "^4.1.17",
     "aos": "^2.3.4",
     "axios": "^1.13.2",
@@ -21,7 +20,6 @@
     "react-router-dom": "^7.10.1",
     "react-toastify": "^11.0.5",
     "tailwindcss": "^4.1.17",
-    "three": "^0.134.0",
     "vanta": "^0.5.24"
   },
   "devDependencies": {
