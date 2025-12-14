@@ -45,7 +45,7 @@ function Timer({targetdate}) {
 function Timebox({label, value}) {
     return (
         <div className="w-20 h-20 border-box p-0.5 bg-gradient-to-br from-teal-500 rounded-[10px] via-purple-500 shadow-[0px_0px_12px_rgba(168,85,247,0.6)] to-red-500 ">
-            <div className="w-full h-full bg-black/70 backdrop-blur-lg rounded-[7px] text-white flex flex-col items-center justify-center">
+            <div className="w-full h-full bg-black/90 backdrop-blur-lg rounded-[7px] text-white flex flex-col items-center justify-center">
                 <p className=" text-[2rem] leading-none space-mono-bold text-blue-400">{String(value).padStart(2,"0")}</p>
                 <p className="text-[0.7rem] text-purple-300">{label}</p>
             </div>
