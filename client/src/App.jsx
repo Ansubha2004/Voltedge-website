@@ -4,6 +4,7 @@ import {Routes,Route} from "react-router-dom"
 import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
 import About from "./pages/About"
+import Footer from "./components/Footer.jsx"
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
         <Route path="/Memberinfo" element={<CWC />} />
         <Route path="/Contact" element={<Contact />} /> */}
       </Routes>
+      <Footer />
     </div>
   )
 }

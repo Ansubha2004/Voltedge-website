@@ -52,9 +52,9 @@ const EncryptButton = ({ text: initialText, click }) => {
       onMouseEnter={scramble}
       onMouseLeave={stopScramble}
       onClick={click}
-      className="group relative font-mono font-medium uppercase text-neutral-300 transition-colors hover:text-indigo-300 btn1"
+      className="group relative font-mono font-medium uppercase text-neutral-300 transition-colors hover:text-indigo-300 btn1 sm:w-auto w-full"
     >
-      <div className="relative z-10 flex items-center gap-2">
+      <div className="relative z-10 flex justify-center items-center gap-2">
         <AiFillThunderbolt/>
         <span>{text}</span>
       </div>
