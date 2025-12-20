@@ -39,9 +39,8 @@ function Footer() {
       className="
         flex flex-col bg-black w-full pb-7 pt-10 px-[4%] sm:px-[6%]
         text-white text-[0.6rem]
-        border-t border-white/30
-        shadow-[0_0_10px_rgba(255,255,255,0.3)]
-        gap-7
+        border-t border-white/30 border-t-[1px]
+        gap-7 overflow-hidden overscroll-none
       "
     >
       <div className="w-full h-full flex justify-between">
