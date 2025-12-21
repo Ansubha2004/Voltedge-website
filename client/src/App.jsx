@@ -10,7 +10,7 @@ function App() {
   
 
   return (
-    <div className="relative w-screen h-screen min-h-screen overflow-x-hidden">
+    <div className="relative w-screen min-h-screen overflow-x-hidden">
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />

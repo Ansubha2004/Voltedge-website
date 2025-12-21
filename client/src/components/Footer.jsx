@@ -37,19 +37,19 @@ function Footer() {
     <footer
       id="footer"
       className="
-        flex flex-col bg-black w-full pb-7 pt-10 px-[4%] sm:px-[6%]
+        flex flex-col bg-black pb-7 pt-15 sm:pt-10 px-[4%] sm:px-[6%]
         text-white text-[0.6rem]
         border-t border-white/30 border-t-[1px]
-        gap-7 overflow-hidden overscroll-none
+        gap-7 
       "
     >
-      <div className="w-full h-full flex justify-between">
+      <div className="w-full h-full flex sm:flex-row flex-col sm:gap-0 gap-7 sm:justify-between">
 
         {/* LEFT */}
-        <div className="w-[40%] flex flex-col items-start gap-4">
+        <div className="sm:w-[40%] flex flex-col items-start gap-4">
           <p
             className="
-              voltedgelogo text-[1.8rem] -translate-x-1 sekuya-regular
+              voltedgelogo text-[2rem] sm:text-[1.8rem] -translate-x-1 sekuya-regular
               drop-shadow-[0_0_10px_#ec4899]
               hover:drop-shadow-[0_0_26px_#ec4899]
               transition-all duration-300
@@ -58,7 +58,7 @@ function Footer() {
             VOLT-EDGE
           </p>
 
-          <p className="oxanium opacity-60">
+          <p className="oxanium sm:text-none text-[0.9rem] opacity-60">
             The flagship inter-departmental technical & cultural event, jointly organized
             by the Department of Electrical and Electronics Engineering and Department of Electrical Engineering.
           </p>
@@ -69,8 +69,8 @@ function Footer() {
         </div>
 
         {/* QUICK LINKS */}
-        <div className="w-fit flex flex-col items-start gap-1">
-          <p className="space-mono-bold text-[0.9rem] mb-2 drop-shadow-[0_0_8px_rgba(236,72,153,0.6)]">
+        <div className="sm:w-fit w-full flex flex-col items-start gap-2 sm:gap-1">
+          <p className="space-mono-bold text-[1.3rem] sm:text-[0.9rem] mb-2 drop-shadow-[0_0_8px_rgba(236,72,153,0.6)]">
             QUICK LINKS
           </p>
 
@@ -79,13 +79,12 @@ function Footer() {
               key={index}
               to={link.href}
               className="
-                oxanium text-[0.7rem] opacity-50
+                oxanium text-[1rem] sm:text-[0.7rem] opacity-50
                 drop-shadow-[0_0_6px_rgba(236,72,153,0.4)]
                 hover:opacity-100
                 hover:bg-gradient-to-br hover:from-teal-400 hover:to-purple-500
                 hover:text-transparent hover:bg-clip-text
                 hover:drop-shadow-[0_0_20px_#ec4899]
-                transition-all duration-300
               "
             >
               {link.name}
@@ -94,15 +93,15 @@ function Footer() {
         </div>
 
         {/* CONTACT + SOCIAL */}
-        <div className="w-fit flex flex-col items-start gap-1">
-          <p className="space-mono-bold text-[0.9rem] mb-2 drop-shadow-[0_0_8px_rgba(236,72,153,0.6)]">
+        <div className="w-full sm:w-fit flex flex-col items-start gap-1">
+          <p className="space-mono-bold text-[1.3rem] sm:text-[0.9rem] mb-2 drop-shadow-[0_0_8px_rgba(236,72,153,0.6)]">
             CONTACT US
           </p>
 
           {contact.map((con, index) => (
             <div
               key={index}
-              className="group flex gap-2 items-center oxanium text-[0.7rem]"
+              className="group flex gap-2 items-center oxanium text-[1rem] sm:text-[0.7rem]"
             >
               {/* ICON */}
               <span
@@ -113,7 +112,7 @@ function Footer() {
                   group-hover:opacity-100
                   group-hover:drop-shadow-[0_0_18px_#ec4899]
                   group-hover:text-pink-400
-                  transition-all duration-300
+                  transition-all 
                 "
               >
                 {con.icon}
@@ -123,13 +122,13 @@ function Footer() {
               <a
                 href={con.href}
                 className="
-                  translate-y-0.5 opacity-50
+                  sm:translate-y-0.5 opacity-50
                   drop-shadow-[0_0_6px_rgba(236,72,153,0.4)]
                   group-hover:opacity-100
                   group-hover:bg-gradient-to-br group-hover:from-teal-400 group-hover:to-purple-500
                   group-hover:text-transparent group-hover:bg-clip-text
                   group-hover:drop-shadow-[0_0_20px_#ec4899]
-                  transition-all duration-300
+                  transition-all
                 "
               >
                 {con.name}
@@ -146,13 +145,13 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-                  group p-3 rounded-[12px]
+                  group p-5 sm:p-3 rounded-[12px]
                   border border-white/20
                   drop-shadow-[0_0_10px_rgba(236,72,153,0.5)]
                   hover:border-pink-500
                   hover:drop-shadow-[0_0_26px_#ec4899]
                   hover:scale-110
-                  transition-all duration-300
+                  transition-all
                 "
               >
                 <span
@@ -173,7 +172,7 @@ function Footer() {
 
       </div>
       <div className="w-full border-t border-t-[1px] border-t-white/30"></div>
-      <div className="flex w-full justify-between oxanium opacity-[0.8]">
+      <div className="flex sm:flex-row flex-col w-full sm:text-none text-[0.8rem] items-center sm:justify-between oxanium opacity-[0.8]">
         <p>© 2026 VOLT-EDGE. All rights reserved.</p>
         <p>Dept. of EEE & Dept. of EE</p>
       </div>
